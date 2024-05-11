@@ -1,10 +1,11 @@
 import React from "react";
-import BlogPost from '../components/BlogPost';
+import LatestPosts from "../components/LatestPosts";
 
 const BlogSite = () => {
     return ( 
     <div>
-    <BlogPost  />
+    <h3 className="h3title">Senaste inläggen</h3>
+    <LatestPosts  />
     </div>
     )
 }

@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: rgb(227, 227, 227);
+}
+
+h1,h2,h3,h4,h5 {
+  font-family: "Outfit", sans-serif;
+  color: rgb(0, 0, 0);
+}
+
+p {
+  font-family: "Open Sans", sans-serif;
+}
+
+.h3title {
+  text-align: center;
+}
+
+.title {
+  text-align: center;
+}
+
+/* NAVBAR */
+
+nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 90%;
+  background-color: transparent;
+  font-family: "Outfit", sans-serif;
+  padding: 1% 0 1% 5%;
+}
+
+.link {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 50px;
+}
+
+.link button:hover {
+  color: hotpink;
+  cursor: pointer;
+}
+
+.link a {
+  text-decoration: none;
+}
+
+.link h1:hover {
+  color: hotpink;
+  cursor: pointer;
+}
+
+.links {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.links a {
+  text-decoration: none;
+  color: rgb(0, 0, 0); 
+  margin-right: 20px;
+}
+
+.links a:hover {
+  color: rgb(234, 54, 186);
+  cursor: pointer;
+}
+
+.Navbtn {
+  color: white;
+  background-color: rgb(234, 54, 186);
+  border: none;
+  border-radius: 25px;
+  padding: 2% 6% 2% 6%;
+  width: 150px;
+  height: 40px;
+}
+
+.Navbtn:hover {
+  background-color: rgb(0, 0, 0);
+  cursor: pointer;
+}
+
+.ToggleBtn {
+  color: black;
+  border: none;
+  background-color: transparent;
+  font-size: 16px;
+}
+
+/* FOOTER */
+
+footer {
+  background-color: hotpink;
+  
+}
+
+/* LANDINGPAGE */
+
+.hero {
+  margin: 5% 0 7% 0;
+}
+
+.hero-title {
+  text-align: center;
+}
+
+.hero-p {
+  text-align: center;
+}
+
+/* LATEST POST */
+
+.PostArray {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+
+.ArrayPost {
+  border: solid rgb(0, 0, 0) 1px;
+  background-color: white;
+  border-radius: 15px;
+  padding: 2%;
+}
+
+/* BLOG PAGE */
+
+.Form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  border-radius: 25px;
+  margin: 0% 20% 1% 20%; 
+}
+
+.BlogForm {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+textarea {
+  min-width: 100%;
+  max-width: 100%;
+  background-color: transparent;
+  border-radius: 10px;
+  padding: 5%;
+  color: rgb(0, 0, 0);
+}
+
+input {
+  background-color: transparent;
+  border-radius: 25px;
+  padding: 5%;
+  color: rgb(0, 0, 0);
+  border: 1px solid black;
+}
+
+.FormButton {
+  color: rgb(255, 255, 255);
+  background-color: black;
+  padding: 2%;
+  border: none;
+  border-radius: 25px;
+  width: 250px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.FormButton:hover {
+  color: black;
+  background-color: hotpink;
+  cursor: pointer;
+}
+
+/* BLOGPOST */
+
+.BloggPost {
+  color: rgb(0, 0, 0);
+  background-color: white;
+  border-radius: 25px;
+  padding: 5% 10% 5% 10%;
+  font-family: "Open Sans", sans-serif;
+  margin: 5% 5% 5% 5%;
+  width: 500px;
+  border: 1px black solid; 
+}
+
+.DeleteBtn:hover {
+  color: hotpink;
+  text-decoration: underline;
+}

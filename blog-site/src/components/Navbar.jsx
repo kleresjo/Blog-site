@@ -1,16 +1,19 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import ToggleButton from "./ToggleButton";
 
 const Navbar = () => {
     return (
     <nav>
-    <div>
-    <h1>Blog site</h1>
+    <div className="link">
+    <Link to="/"><h1>Blog site</h1></Link>
+     <ToggleButton />
     </div>
-      <ul>
+      <div className="links">
         <Link to="/">Hem</Link>
         <Link to="/Blogg">Blogg</Link>
-      </ul>
+        <Link to="/My-Account"><button className="Navbtn">Mitt konto</button></Link>
+      </div>
     </nav>
     );
 }
