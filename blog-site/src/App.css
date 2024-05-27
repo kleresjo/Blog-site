@@ -24,6 +24,39 @@ p {
   text-align: center;
 }
 
+.row {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.btnDiv {
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+  gap: 15px;
+}
+
+input {
+  background-color: white;
+  border: solid hotpink 2px;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+textarea {
+  border: solid hotpink 2px;
+  padding: 10px;
+  border-radius: 10px;
+  font-family: "Open Sans", sans-serif;
+}
+
 /* NAVBAR */
 
 nav {
@@ -121,87 +154,100 @@ footer {
 
 /* LATEST POST */
 
-.PostArray {
+
+/* BLOG PAGE */
+
+
+/* BLOGPOST */
+
+.gridPost {
+    display: flex;
+    flex-direction: grid;
+    align-items: top;
+    justify-content: left;
+    margin-left: 8%;
+    gap: 200px;
+    width: 90%;
+    margin-top: 50px;
+}
+
+.ownerDiv {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  gap: 50px;
+  gap: 20px;
 }
 
-.ArrayPost {
-  border: solid rgb(0, 0, 0) 1px;
+.ownerPost {
+  border: solid hotpink 2px;
   background-color: white;
-  border-radius: 15px;
-  padding: 2%;
+  border-radius: 20px;
+  padding: 20px;
 }
 
-/* BLOG PAGE */
-
-.Form {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+.blogPost {
+  border: solid hotpink 2px;
+  width: 200%;
   background-color: white;
-  border-radius: 25px;
-  margin: 0% 20% 1% 20%; 
+  border-radius: 20px;
+  margin-bottom: 30px;
+  padding: 20px;
+  max-width: 700px;
 }
 
-.BlogForm {
-  display: flex;
-  flex-direction: column;
-  width: 50%;
+.makeBlogPost {
+  border: solid hotpink 2px;
+  width: 150%;
+  background-color: white;
+  border-radius: 20px;
+  margin-bottom: 30px;
+  padding: 20px;
+  max-width: 500px;
 }
 
-textarea {
-  min-width: 100%;
-  max-width: 100%;
+.postTextarea {
+  min-width: 400px;
+}
+
+.primaryPostBtn {
+  color: white;
+  background-color: hotpink;
+  border: solid transparent 2px;
+  border-radius: 20px;
+  padding: 5px 10px 5px 10px; 
+}
+
+.primaryPostBtn:hover {
+  color: hotpink;
+  background-color: rgb(0, 0, 0);
+  cursor: pointer;
+}
+
+.secondaryPostBtn {
+  border: solid hotpink 2px;
+  border-radius: 20px;
+  padding: 5px 10px 5px 10px;
   background-color: transparent;
-  border-radius: 10px;
-  padding: 5%;
-  color: rgb(0, 0, 0);
+  color: hotpink;
 }
 
-input {
-  background-color: transparent;
-  border-radius: 25px;
-  padding: 5%;
-  color: rgb(0, 0, 0);
-  border: 1px solid black;
-}
-
-.FormButton {
-  color: rgb(255, 255, 255);
-  background-color: black;
-  padding: 2%;
-  border: none;
-  border-radius: 25px;
-  width: 250px;
-  margin-top: 50px;
-  margin-bottom: 50px;
-}
-
-.FormButton:hover {
-  color: black;
+.secondaryPostBtn:hover {
+  color: white;
   background-color: hotpink;
   cursor: pointer;
 }
 
-/* BLOGPOST */
-
-.BloggPost {
-  color: rgb(0, 0, 0);
-  background-color: white;
-  border-radius: 25px;
-  padding: 5% 10% 5% 10%;
+.commentInput {
+  min-height: 20px;
+  min-width: 95%;
+  max-width: 95%;
   font-family: "Open Sans", sans-serif;
-  margin: 5% 5% 5% 5%;
-  width: 500px;
-  border: 1px black solid; 
 }
 
-.DeleteBtn:hover {
-  color: hotpink;
-  text-decoration: underline;
+
+.blogText {
+  width: 95%;
+  word-wrap: break-word;
+  text-wrap: wrap;
 }

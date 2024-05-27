@@ -5,29 +5,38 @@ import Navbar from './components/Navbar';
 import BlogSite from './pages/BlogSite';
 import Footer from './components/Footer';
 import MyAccount from './pages/MyAccount';
-import { useState, createContext } from "react";
+import LogIn from './pages/LogIn';
+import Register from './pages/Register';
+import { createContext } from "react";
+import { PostProvider } from "./context/PostContext";
+import { CommentProvider } from './context/CommentContext';
+import PrivateRoutes from "./components/PrivateRoutes";
 import './App.css'
 
 export const AppContext = createContext();
 
 const App = () => {
-  const [username] = useState("Julia");
-  const [inloggad] = useState("Inloggad som: Julia");
-  const [utloggad] = useState("Logga in");
-  const [username2] = useState("Jens");
+
   return (
     <div className="App">
-    <AppContext.Provider value={{username, inloggad, utloggad, username2}}>
+    <PostProvider>
     <BrowserRouter>
+    <CommentProvider>
     <Navbar  />
+
     <Routes>
+    <Route element={<PrivateRoutes />} />
     <Route path="/" element={<LandingPage />} />
+    <Route path ="/Registrera-konto" element={<Register  />} />
+    <Route path="/Logga-in" element={<LogIn  />}/>
     <Route path="/Blogg" element={<BlogSite />} />
-    <Route path="/My-Account" element={<MyAccount />} />
+    <Route path="/Mitt-konto" element={<MyAccount />} />
     </Routes>
+
     <Footer />
+    </CommentProvider>
     </BrowserRouter>
-    </AppContext.Provider>
+    </PostProvider>
     </div>
   )
 }
