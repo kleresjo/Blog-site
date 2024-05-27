@@ -40,12 +40,12 @@ const Comments = (props) => {
         placeholder="Skriv din kommentar här"
         {...textInput}
       />
-      <button onClick={addCommentBtn} className="primaryPostBtn">Lägg till kommentar</button>
-                        {filteredComments.map((comment) => (
-        <p key={comment.id}>
-          "{comment.text}", {comment.author}
-        </p>
-      ))}
+ <button onClick={addCommentBtn} className="primaryPostBtn">Lägg till kommentar</button>
+  {filteredComments.slice().reverse().map((comment) => (
+    <p key={comment.id} className="comment">
+      "{comment.text}" <br /> <b>{comment.author}</b>
+    </p>
+  ))}
     </div>
   );
 };

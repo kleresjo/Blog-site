@@ -24,18 +24,18 @@ const LoginComponent = () => {
   };
 
   return (
-    <div>
+    <div className="middle">
       {userLoggedIn && <Navigate to={"/"} replace={true} />}
       <main>
-        <div>
+        <div className="logIn">
           <div>
-            <h2>Log in</h2>
+            <h1>Logga in</h1>
           </div>
           <form onSubmit={onSubmit}>
             <div>
-              <label>Email</label>
               <input
                 type="email"
+                placeholder="Email"
                 autoComplete="email"
                 required
                 value={email}
@@ -44,11 +44,11 @@ const LoginComponent = () => {
                 }}
               />
             </div>
-
+<br></br>
             <div>
-              <label>Password</label>
               <input
                 type="password"
+                placeholder="Lösenord"
                 autoComplete="current-password"
                 required
                 value={password}
@@ -59,8 +59,9 @@ const LoginComponent = () => {
             </div>
 
             {errorMessage && <span>{errorMessage}</span>}
-
+<br></br>
             <button
+              className="primaryPostBtn"
               type="submit"
               disabled={isSigningIn}
             >

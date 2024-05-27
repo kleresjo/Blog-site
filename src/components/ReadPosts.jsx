@@ -31,7 +31,7 @@ const ReadPosts = () => {
 
   return (
     <div className="blogPosts">
-      {blogs.map((blog) => {
+      {[...blogs].reverse().map((blog) => {
         return (
           <div key={blog.id}>
             {editingBlog === blog.id ? (

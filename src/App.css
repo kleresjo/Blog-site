@@ -36,6 +36,14 @@ p {
   gap: 15px;
 }
 
+.middle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 200px;
+}
+
 .btnDiv {
   display: flex;
   flex-direction: row;
@@ -134,8 +142,17 @@ nav {
 /* FOOTER */
 
 footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   background-color: hotpink;
-  
+  color: white;
+  margin-top: 10px;
+  padding-left: 20px;
+}
+
+footer p {
+  text-align: center;
 }
 
 /* LANDINGPAGE */
@@ -152,11 +169,13 @@ footer {
   text-align: center;
 }
 
-/* LATEST POST */
+/* LOG IN */
 
-
-/* BLOG PAGE */
-
+.logIn {
+  border: solid hotpink 2px;
+  border-radius: 20px;
+  padding: 20px;
+}
 
 /* BLOGPOST */
 
@@ -238,6 +257,8 @@ footer {
   cursor: pointer;
 }
 
+/* COMMENTS */
+
 .commentInput {
   min-height: 20px;
   min-width: 95%;
@@ -245,9 +266,14 @@ footer {
   font-family: "Open Sans", sans-serif;
 }
 
-
 .blogText {
   width: 95%;
   word-wrap: break-word;
   text-wrap: wrap;
+}
+
+.comment {
+  border: solid hotpink 2px;
+  padding: 5px;
+  border-radius: 5px;
 }

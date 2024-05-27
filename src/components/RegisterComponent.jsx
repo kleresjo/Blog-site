@@ -26,19 +26,19 @@ const RegisterComponent = () => {
   };
 
   return (
-    <div>
+    <div className="middle">
       {userLoggedIn && <Navigate to={"/"} replace={true} />}
 
       <main>
-        <div>
+        <div className="logIn">
           <div>
             <div>
               <h2>Skapa konto</h2>
             </div>
           </div>
           <form onSubmit={onSubmit}>
-          <label>Användarnamn</label>
               <input
+                placeholder="Användarnamn"
                 type="username"
                 required
                 value={username}
@@ -47,8 +47,9 @@ const RegisterComponent = () => {
                 }}
               />
             <div>
-              <label>Email</label>
+            <br></br>
               <input
+                placeholder="Email"
                 type="email"
                 autoComplete="email"
                 required
@@ -58,10 +59,10 @@ const RegisterComponent = () => {
                 }}
               />
             </div>
-
+<br></br>
             <div>
-              <label>Password</label>
               <input
+                placeholder="Lösenord"
                 disabled={isRegistering}
                 type="password"
                 autoComplete="new-password"
@@ -72,10 +73,10 @@ const RegisterComponent = () => {
                 }}
               />
             </div>
-
+<br></br>
             <div>
-              <label>Confirm Password</label>
               <input
+                placeholder="Repetera lösenord"
                 disabled={isRegistering}
                 type="password"
                 autoComplete="off"
@@ -86,10 +87,11 @@ const RegisterComponent = () => {
                 }}
               />
             </div>
-
+<br></br>
             {errorMessage && <span>{errorMessage}</span>}
 
             <button
+              className="primaryPostBtn"
               type="submit"
               disabled={isRegistering}
             >
