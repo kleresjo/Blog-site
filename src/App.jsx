@@ -25,12 +25,15 @@ const App = () => {
     <Navbar  />
 
     <Routes>
-    <Route element={<PrivateRoutes />} />
+    <Route element={<PrivateRoutes />}>
     <Route path="/" element={<LandingPage />} />
     <Route path ="/Registrera-konto" element={<Register  />} />
+    </Route>
     <Route path="/Logga-in" element={<LogIn  />}/>
+    <Route element={<PrivateRoutes />}>
     <Route path="/Blogg" element={<BlogSite />} />
     <Route path="/Mitt-konto" element={<MyAccount />} />
+    </Route>
     </Routes>
 
     <Footer />
